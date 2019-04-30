@@ -9,8 +9,10 @@ describe nitty-gritty concept of react and redux library
         - alternative redux
         - less flexible
 ## HOCs, render props
-  - HOCs: 
-  - render props: function prop to render another component
+  - HOCs: a function 
+      - with render props, Hocs play a role of direct client of the component which has render props and return the component as return value.
+  - render props: function prop to render another component. 
+     - a component which has render props holds additional functionality (cross cutting concern) and render wrapped component together.
 ## Performance
   - reconiliation: how react decide mount/umount/update component when comparing virtual dom and actual dom 
   - Component and PureComponent and shouldComponentUpdate method
@@ -38,4 +40,6 @@ describe nitty-gritty concept of react and redux library
     - handler: object to map actions and case reducer 
     - case reducer
 # Thunk
-  - 
+  - middleware of redux
+  - detect if action is function not object
+  - if action is function, thunk call the function so that you can call any asynch stuff or handle multiple actions.
