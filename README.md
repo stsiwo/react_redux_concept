@@ -43,3 +43,6 @@ describe nitty-gritty concept of react and redux library
   - middleware of redux
   - detect if action is function not object
   - if action is function, thunk call the function so that you can call any asynch stuff or handle multiple actions.
+  
+# Tips
+  - useRef does not update the component (but useState does)
